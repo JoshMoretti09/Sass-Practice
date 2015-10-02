@@ -1,0 +1,19 @@
+/*Styling for nav elements*/
+
+ul.main-nav {
+	list-style: none;
+	text-align: center;
+	border-bottom: 5px solid black;
+	padding-bottom: $unit;
+li {
+	display: inline;
+	font-size: $unit*5;
+	padding: 10px;
+	}
+	li a {
+		color: $nav-color;
+		&:hover{
+			color: blue;
+		}
+	}
+}

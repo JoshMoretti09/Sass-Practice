@@ -1,0 +1,51 @@
+/*Styling for nav elements*/
+ul.main-nav {
+  list-style: none;
+  text-align: center;
+  border-bottom: 5px solid black;
+  padding-bottom: 10px; }
+  ul.main-nav li {
+    display: inline;
+    font-size: 50px;
+    padding: 10px; }
+  ul.main-nav li a {
+    color: #EC2A01; }
+    ul.main-nav li a:hover {
+      color: blue; }
+
+body {
+  background-color: #ABB2B9; }
+
+/* styling for heading and top of page */
+.headings, article h4 {
+  color: #EC5B01;
+  text-align: center; }
+
+h1, article h4 {
+  font-size: 100px; }
+
+article h4 {
+  color: #01BBEC;
+  margin: 0 auto; }
+
+/*Styling for paragraph tags*/
+.content, .sub-content {
+  color: #16A085;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px; }
+
+.sub-content {
+  padding-top: 15px;
+  padding-bottom: 60px; }
+
+/* Footer styling*/
+footer {
+  text-align: center;
+  border-top: 5px solid black;
+  padding-top: 15px; }
+
+footer span {
+  color: #2980B9; }
+
+/*# sourceMappingURL=main.css.map */

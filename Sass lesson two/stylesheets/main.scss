@@ -1,0 +1,109 @@
+@import 'bourbon/bourbon';
+@import 'partials/buttons';
+@import 'partials/mixin';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: tint(orange, 30%);
+	font: normal 18px Helvetica, arial;
+
+	@include breakpoint(small){
+		background-color: red;
+	}
+	@include breakpoint(medium){
+		background-color: grey;
+	}
+	@include breakpoint(large){
+		background-color: white;
+	}
+}
+.col {
+	border: 1px solid black;
+	padding: 9px;
+	@include breakpoint(medium){
+		float: left;
+		width: 33%;
+	}
+}
+
+
+
+.info-extra {
+	display: none;
+
+	@media all and (min-width: 420px){
+		display: block;
+	}
+}
+
+input {
+	font-size: 24px;
+
+	@include placeholder {
+		color: blue;
+	}
+}
+
+h1 {
+	color: black;
+}
+
+$text-size: small;
+
+h1 {
+	@if $text-size == big {
+		font-size: 100px;
+	}
+	@else if $text-size == small {font-size: 20px;}
+}
+
+@for $i from 1 through 6 {
+	.text-size-#{$i}{
+		font-size: 12px * $i;
+	}
+}
+
+@each $color in red, green, blue {
+	.color-#{$color} {
+		color: $color;
+	}
+}
+
+@each $listStyle in disc, circle, decimal, square {
+	.listStyle-#{$listStyle}{
+		list-style-type: $listStyle;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

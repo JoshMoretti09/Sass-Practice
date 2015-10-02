@@ -1,0 +1,57 @@
+@import 'partials/variables';
+@import 'partials/navs';
+
+body {
+	background-color: #ABB2B9;
+}
+
+/* styling for heading and top of page */
+.headings {
+	color: $heading-color;
+	text-align: center;
+}
+
+h1 {
+	font-size: $unit*10
+}
+
+article h4 {
+	@extend .headings;
+	@extend h1;
+	color: #01BBEC;
+	margin: 0 auto;
+}
+
+/*Styling for paragraph tags*/
+.content {
+	color: $content-color;
+	margin: 0 auto;
+	text-align: center;
+	width: 500px;
+}
+
+.sub-content {
+	@extend .content;
+	padding-top: $unit + 5;
+	padding-bottom: $unit + 50;
+}
+
+/* Footer styling*/
+
+footer {
+	text-align: center;
+	border-top: 5px solid black;
+	padding-top: $unit + 5;
+}
+footer span {
+	color: $footer-color
+}
+
+
+
+
+
+
+
+
+

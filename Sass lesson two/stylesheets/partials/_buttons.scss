@@ -1,0 +1,26 @@
+%button {
+	background-color: grey;
+	font-size: 30px;
+	color: black;
+	border-radius: 20px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.button-primary {
+	@extend %button;
+	background-color: blue;
+	border: solid 5px black;
+}
+
+.button-secondary {
+	@extend %button;
+	background-color: green;
+	border: solid 5px black;
+}
+
+.button-disabled {
+	@extend %button;
+	border: solid 5px black;
+
+}
